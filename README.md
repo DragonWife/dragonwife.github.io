@@ -1,2 +1,0 @@
-# teyazone
-website
