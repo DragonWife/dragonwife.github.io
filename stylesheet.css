@@ -1,0 +1,117 @@
+/* here we go here we go here we go here we go */
+
+body {
+	background-image: url("images/cyber.jpg");
+}
+
+h1 {
+	text-align: center;
+	color: pink;
+	margin: 30px 0px 30px 0px; /* top right bottom left*/
+}
+
+.leftfloat {float: left;}
+.rightfloat {float:right;}
+
+p {
+	font-family: monospace;
+	font-size: 14px;
+	text-align: justify;
+	color: pink;
+	padding: 10px;
+	margin: 5px;
+}
+
+/* main text on homepage */
+.maintext {
+	position: absolute;
+	left: 470px;
+	margin: auto;
+	width: 45%;
+	border-style: solid;
+	border-color: pink;
+	background-color: #2f1744;
+	z-index: 999;
+}
+
+.divinelight {
+	float: left;
+	width: 34%;
+	padding: 3px 9px 3px 3px;
+}
+
+/* links n stuff */
+.linkbox {
+	position: absolute;
+	top: 270px;
+	left: 67px;
+	margin: auto;
+	width: 300px;
+	z-index: 99;
+}
+
+ul {
+	list-style-type: none;
+	background-image: url("images/double_pendulum.gif");
+	background-repeat: no-repeat;
+	border-style: solid;
+	border-color: pink;
+	height: 190px;
+	width: 150px;
+}
+
+li a {
+	text-align: left;
+	margin: 5px;
+}
+
+/* joke adspace */
+.koa-ad {
+	position: absolute;
+	top: 200px;
+	right: 20px;
+	border: 3px solid pink;
+}
+.knife-moises-ad {
+	position: absolute;
+	bottom: 76px;
+	left: 33px; 
+	border: 3px solid pink;
+	height: 534px;
+	width: 500px;
+	background-image: url("images/knifegatoro-moises.jpg");
+	z-index: 1;
+}
+
+.scale {
+	width: 100%;
+}
+
+.shelby-square {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	border: 3px solid pink;
+	z-index: 1;
+	width: 85px;
+	height: 85px;
+}
+
+/* the rectangle currently, eventually to be updated to a facsimile of a stripped down terminal emu */
+.term {
+	position: absolute;
+	top: 55%;
+	right: 430px;
+	width: 40%;
+	height: 37%;
+	border-style: solid; 
+	border-color: pink;
+	background-color: #2f1744;
+
+}
+
+.termp {
+	margin: auto;
+	text-align: left;
+}
+
