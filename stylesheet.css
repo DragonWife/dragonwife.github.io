@@ -107,6 +107,7 @@ li a {
 	border-style: solid; 
 	border-color: pink;
 	background-color: #2f1744;
+	z-index: 99;
 
 }
 
