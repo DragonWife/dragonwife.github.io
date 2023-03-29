@@ -87,6 +87,10 @@ li a {
 	width: 100%;
 }
 
+.scaledown {
+	width: 20%;
+}
+
 .shelby-square {
 	position: absolute;
 	bottom: 5px;
@@ -97,7 +101,7 @@ li a {
 	height: 85px;
 }
 
-/* the rectangle currently, eventually to be updated to a facsimile of a stripped down terminal emu */
+/* the rectangle currently, my earlier aspirations fall by the wayside */
 .term {
 	position: absolute;
 	top: 55%;
@@ -116,3 +120,22 @@ li a {
 	text-align: left;
 }
 
+/* drawings specific stuff */
+.maintext2 {
+	border-style: solid;
+	border-color: pink;
+	background-color: #2f1744;
+	margin: 10px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	gap: 5px;
+	padding: 5px;
+}
+
+.grid-container > div { 
+	padding: 5px 5px 5px 5px;
+	font-size: 30px;
+}
