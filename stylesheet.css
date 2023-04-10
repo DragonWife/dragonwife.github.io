@@ -87,10 +87,6 @@ li a {
 	width: 100%;
 }
 
-.scaledown {
-	width: 20%;
-}
-
 .shelby-square {
 	position: absolute;
 	bottom: 5px;
@@ -126,6 +122,11 @@ li a {
 	border-color: pink;
 	background-color: #2f1744;
 	margin: 10px;
+}
+
+.dendy {
+	float: left;
+	width: 20%;
 }
 
 .grid-container {
