@@ -72,14 +72,14 @@ li a {
 	right: 20px;
 	border: 3px solid pink;
 }
-.knife-moises-ad {
+.mixedsignals-ad {
 	position: absolute;
 	bottom: 76px;
 	left: 33px; 
 	border: 3px solid pink;
 	height: 534px;
 	width: 500px;
-	background-image: url("images/knifegatoro-moises.jpg");
+	background-image: url("images/mixedsignals.jpg");
 	z-index: 1;
 }
 
