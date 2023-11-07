@@ -74,6 +74,7 @@ li a {
 	border: 3px solid pink;
 	left: 80%;
 	top: 20%;
+	z-index: 5;
 }
 
 .scale {
@@ -90,10 +91,10 @@ li a {
 	height: 85px;
 }
 
-.rectangle {
+#rectangle {
 	position: absolute;
 	border: 3px solid pink;
-	z-index: 6;
+	z-index: 3;
 	width: 844px;
 	height: 484px;
 	left: 20%;
@@ -107,4 +108,28 @@ li a {
 	cursor: move;
 	z-index: 7;
 	background-color: #2f1744;
+}
+
+#album-cover {
+	align: center;
+	width: 140px;
+	height: 140px;
+}
+
+#track {
+	font-family: monospace;
+	font-size: 16px;
+	color: pink;
+}
+
+#artist {
+	font-family: monospace;
+	font-size: 14px;
+	color: pink;
+}
+
+#date {
+	font-family: monospace;
+	font-size: 12px;
+	color: white;
 }
