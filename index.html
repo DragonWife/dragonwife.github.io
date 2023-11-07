@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="stylesheet.css">
+	<title>website</title>
 </head>
+
 <body>
 
-<!-- main space -->
 <h1>welcome to teyazone</h1>
-<div class="maintext">
+<div id="maintext">
 	<img class="divinelight" src="images/divinelight.png" alt="divine light severed">
 	<p>;big art fan;big fan of art;
 	<br>this machine grows living flesh
-	<br>no one is bored, everything is boring</p> 
+	</p>
 </div>
 
 <!-- links -->
-<div class="linkbox">
+<div id="linkbox">
 <ul>
 	<li><a href="https://www.last.fm/user/DragooWife">final frequency</a>
 	<li><a href="https://letterboxd.com/dragoowife/">letterboxd</a>
@@ -24,23 +26,31 @@
 </ul>
 </div>
 
-<!-- the 'ads' -->
-<div class="koa-ad">
+<div id="koa-ad">
 	<img src="images/koacatpornad.png">
 </div>
 
-<div class="mixedsignals-ad">
-	<img class="scale" src="images/mixedsignals.jpg"> 
+<div id="snorkle-square">
+	<img width="100%" src="images/keycaps.jpg">
 </div>
 
-<div class="snorkle-square">
-	<img class="scale" src="images/snorkle-square.jpg">
+<div id="lastfm">
+<table>
+    <tr>
+        <td colspan="3"><img id="album-cover"></td>
+    </tr>
+    <tr>
+        <td id="track"></td>
+    </tr>
+    <tr>
+        <td id="artist"></td>
+    </tr>
+    <tr>
+        <td id="date"></td>
+    </tr>
+</table>
 </div>
 
-<!-- the rectangle -->
-<div class="term">
-	<iframe src="rectangle.html" title="rectangle"></iframe>
-</div>
-	
+<script src="drag.js"></script>
 </body>
 </html>

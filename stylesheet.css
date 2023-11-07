@@ -22,8 +22,12 @@ p {
 	margin: 5px;
 }
 
+td {
+	vertical-align: middle;
+}
+
 /* main text on homepage */
-.maintext {
+#maintext {
 	position: absolute;
 	left: 470px;
 	margin: auto;
@@ -31,7 +35,7 @@ p {
 	border-style: solid;
 	border-color: pink;
 	background-color: #2f1744;
-	z-index: 999;
+	z-index: 9;
 }
 
 .divinelight {
@@ -41,13 +45,13 @@ p {
 }
 
 /* links n stuff */
-.linkbox {
+#linkbox {
 	position: absolute;
 	top: 270px;
 	left: 67px;
 	margin: auto;
 	width: 300px;
-	z-index: 99;
+	z-index: 8;
 }
 
 ul {
@@ -66,28 +70,18 @@ li a {
 }
 
 /* joke adspace */
-.koa-ad {
+#koa-ad {
 	position: absolute;
-	top: 200px;
-	right: 20px;
 	border: 3px solid pink;
-}
-.mixedsignals-ad {
-	position: absolute;
-	bottom: 76px;
-	left: 33px; 
-	border: 3px solid pink;
-	height: 534px;
-	width: 500px;
-	background-image: url("images/mixedsignals.jpg");
-	z-index: 1;
+	left: 80%;
+	top: 20%;
 }
 
 .scale {
 	width: 100%;
 }
 
-.shelby-square {
+#snorkle-square {
 	position: absolute;
 	bottom: 5px;
 	right: 5px;
@@ -97,46 +91,11 @@ li a {
 	height: 85px;
 }
 
-/* iframe box that i write things in . all is increasingly disorganized */
-.term {
+#lastfm {
 	position: absolute;
-	top: 55%;
-	right: 430px;
-	width: 40%;
-	height: 37%;
-	z-index: 99;
-
-}
-
-iframe {
-	height: 375px;
-	width: 746px;
-	border-style: solid; 
-	border-color: pink;
-
-}
-
-/* drawings specific stuff */
-.maintext2 {
-	border-style: solid;
-	border-color: pink;
+	border: solid pink;
+	border-width: 3px 3px 3px 3px;
+	cursor: move;
+	z-index: 7;
 	background-color: #2f1744;
-	margin: 10px;
-}
-
-.dendy {
-	float: left;
-	width: 20%;
-}
-
-.grid-container {
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	gap: 5px;
-	padding: 5px;
-}
-
-.grid-container > div { 
-	padding: 5px 5px 5px 5px;
-	font-size: 30px;
 }
