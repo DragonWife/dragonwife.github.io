@@ -91,11 +91,21 @@ li a {
 	height: 85px;
 }
 
+#rectangle {
+	position: absolute;
+	border: 3px solid pink;
+	z-index: 6;
+	width: 400px;
+	height: 100px;
+}
+
 #lastfm {
 	position: absolute;
 	border: solid pink;
 	border-width: 3px 3px 3px 3px;
 	cursor: move;
+	width: 400px;
+	height: 100px;
 	z-index: 7;
 	background-color: #2f1744;
 }
