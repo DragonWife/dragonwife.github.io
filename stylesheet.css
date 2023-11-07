@@ -50,7 +50,6 @@ td {
 	top: 270px;
 	left: 67px;
 	margin: auto;
-	width: 300px;
 	z-index: 8;
 }
 
@@ -91,12 +90,14 @@ li a {
 	height: 85px;
 }
 
-#rectangle {
+.rectangle {
 	position: absolute;
 	border: 3px solid pink;
 	z-index: 6;
-	width: 400px;
-	height: 100px;
+	width: 844px;
+	height: 484px;
+	left: 20%;
+	top:50%;
 }
 
 #lastfm {
@@ -104,8 +105,6 @@ li a {
 	border: solid pink;
 	border-width: 3px 3px 3px 3px;
 	cursor: move;
-	width: 400px;
-	height: 100px;
 	z-index: 7;
 	background-color: #2f1744;
 }
