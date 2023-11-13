@@ -56,6 +56,11 @@ td {
 	cursor: move;
 }
 
+#linkbox p {
+	color: purple;
+	text-align: justify;
+}
+
 ul {
 	list-style-type: none;
 	background-image: url("images/double_pendulum.gif");
@@ -135,5 +140,5 @@ iframe {
 #date {
 	font-family: monospace;
 	font-size: 12px;
-	color: white;
+	color: pink;
 }
