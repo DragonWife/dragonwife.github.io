@@ -16,7 +16,7 @@ h1 {
 p {
 	font-family: monospace;
 	font-size: 14px;
-	text-align: justify;
+	text-align: right;
 	color: pink;
 	padding: 10px;
 	margin: 5px;
@@ -29,20 +29,22 @@ td {
 /* main text on homepage */
 #maintext {
 	position: absolute;
-	left: 470px;
-	margin: auto;
-	width: 45%;
+	left: 2%;
+	top: 56%;
+	width: 20%;
 	border-style: solid;
 	border-color: pink;
 	background-color: #2f1744;
 	z-index: 9;
+	cursor: move;
 }
 
-.divinelight {
+#divinelight {
 	float: left;
 	width: 34%;
-	padding: 3px 9px 3px 3px;
+	padding: 8px;
 }
+
 
 /* links n stuff */
 #linkbox {
@@ -51,6 +53,7 @@ td {
 	left: 67px;
 	margin: auto;
 	z-index: 8;
+	cursor: move;
 }
 
 ul {
@@ -75,10 +78,7 @@ li a {
 	left: 80%;
 	top: 20%;
 	z-index: 5;
-}
-
-.scale {
-	width: 100%;
+	cursor: move;
 }
 
 #snorkle-square {
@@ -89,25 +89,29 @@ li a {
 	z-index: 1;
 	width: 85px;
 	height: 85px;
+	cursor: move;
 }
 
 #rectangle {
 	position: absolute;
-	border: 3px solid pink;
 	z-index: 3;
-	width: 844px;
-	height: 484px;
-	left: 20%;
-	top:50%;
+	width: 50%;
+	height: 75%;
+	left: 25%;
+	top:10%;
+}
+
+iframe {
+	border: 3px solid pink;
 }
 
 #lastfm {
 	position: absolute;
 	border: solid pink;
 	border-width: 3px 3px 3px 3px;
-	cursor: move;
 	z-index: 7;
 	background-color: #2f1744;
+	cursor: move;
 }
 
 #album-cover {
