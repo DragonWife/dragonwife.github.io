@@ -10,8 +10,15 @@ h1 {
 	margin: 30px 0px 30px 0px; /* top right bottom left*/
 }
 
-.leftfloat {float: left;}
-.rightfloat {float:right;}
+#leftfloat {
+	float: left;
+	padding: 0px 10px 0px 0px;
+}
+
+#rightfloat {
+	float:right;
+	padding: 0px 0px 0px 10px;
+}
 
 p {
 	font-family: monospace;
@@ -24,6 +31,10 @@ p {
 
 td {
 	vertical-align: middle;
+}
+
+iframe {
+	border: 3px solid pink;
 }
 
 /* main text on homepage */
@@ -52,7 +63,7 @@ td {
 	top: 270px;
 	left: 67px;
 	margin: auto;
-	z-index: 8;
+	z-index: 4;
 	cursor: move;
 }
 
@@ -106,10 +117,6 @@ li a {
 	top:10%;
 }
 
-iframe {
-	border: 3px solid pink;
-}
-
 #lastfm {
 	position: absolute;
 	border: solid pink;
@@ -141,4 +148,8 @@ iframe {
 	font-family: monospace;
 	font-size: 12px;
 	color: pink;
+}
+
+#date a {
+	color: white;
 }
