@@ -1,3 +1,5 @@
+// this is all stolen but im bad and didnt record from where . 
+
 //Make the DIV element draggagle:
 dragElement(document.getElementById("lastfm"));
 dragElement(document.getElementById("koa-ad"));
@@ -89,6 +91,9 @@ if (last_track.date) {
 }
 var now_playing = (last_track["@attr"] == undefined) ? false : true
 var imageLink = last_track.image[1]["#text"]
+
+// fix album cover resolution
+imageLink = imageLink.replace("64s","128s")
 
 trackElem = document.getElementById('track')
 artistElem = document.getElementById('artist')
