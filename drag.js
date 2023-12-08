@@ -44,7 +44,7 @@ function dragElement(id) {
 
 // get your own last.fm api key from https://www.last.fm/api/account/create
 const LASTFM_API_KEY = "d93ae0e0a08e683aa7f89fae90249dc0"
-const username = "Dragoowife" // change username here
+const username = "skungcomatus" // change username here
 const url = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&format=json&api_key=" + LASTFM_API_KEY + "&limit=1&user=" + username
 
 // make API call
