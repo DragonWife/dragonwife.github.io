@@ -1,4 +1,5 @@
 /* this is such a mess */ 
+/* test */
 
 body {
 	background-image: url("images/cyber.jpg");
@@ -156,7 +157,7 @@ li a {
 
 
 /* mobile "support" */
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
 
 	#koa-ad {
 		position: absolute;
