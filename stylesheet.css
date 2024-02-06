@@ -1,13 +1,25 @@
-/* this is such a mess */ 
-
 body {
 	background-image: url("images/cyber.jpg");
 }
 
 h1 {
+	font-size: 25px;
 	text-align: center;
 	color: pink;
 	margin: 30px 0px 30px 0px; /* top right bottom left*/
+}
+
+p {
+	font-family: monospace;
+	font-size: 14px;
+	text-align: right;
+	color: pink;
+	padding: 10px;
+	margin: 5px;
+}
+
+iframe {
+	border: 3px solid pink;
 }
 
 #leftfloat {
@@ -20,130 +32,157 @@ h1 {
 	padding: 0px 0px 0px 10px;
 }
 
-p {
-	font-family: monospace;
-	font-size: 14px;
-	text-align: right;
-	color: pink;
-	padding: 10px;
-	margin: 5px;
-}
-
-td {
-	vertical-align: middle;
-}
-
-iframe {
-	border: 3px solid pink;
-}
-
-#koa-ad {
-	position: absolute;
-	border: 3px solid pink;
-	z-index: 0;
-	left: 0%;
-	top: 0%;
-}
-
-#snorkle-square {
-	position: absolute;
-	border: 3px solid pink;
-	z-index: 0;
-	width: 85px;
-	height: 85px;
-	left: 0%;
-	top: 0%;
-}
-
-#rectangle {
-	position: absolute;
-	z-index: 99;
-	width: 100%;
-	height: 75%;
-	left: 0%;
-	top: 30%;
-}
-
-#lastfm {
-	position: absolute;
-	border: solid pink;
-	border-width: 3px 3px 3px 3px;
-	z-index: 0;
-	background-color: #2f1744;
-	left: 0%;
-	top: 0%;
-}
-
+/* primary elements */
 #maintext {
 	position: absolute;
+	left: 1%;
+	top: 56%;
 	width: 20%;
 	border-style: solid;
 	border-color: pink;
 	background-color: #2f1744;
 	z-index: 9;
-	left: 0%;
-	top: 0%;
+	cursor: move;
+}
+
+#divinelight {
+	float: left;
+	width: 34%;
+	padding: 8px;
+}
+	
+#rectangle {
+	position: absolute;
+	z-index: 3;
+	width: 50%;
+	height: 75%;
+	left: 25%;
+	top: 10%;
+}
+
+#mobilebox {
+	display: none;
 }
 
 #linkbox {
 	position: absolute;
+	top: 30%;
+	left: 3%;
 	margin: auto;
-	z-index: 4;
-	left: 0%;
-	top: 0%;
+	z-index: 6;
+	background-image: url("images/double_pendulum.gif");
+	background-repeat: no-repeat;
+	border-style: solid;
+	border-color: pink;
+	cursor: move;
+	height: 190px;
+	width: 215px;
+}
+
+#linkbox p {
+	color: purple;
+	text-align: justify;
+}
+
+#linkbox ul {
+	list-style-type: none;
+	height: 190px;
+	width: 150px;
 }
 
 
-@media (min-width: 800px) {
+/* secondary elements */
+#koa-ad {
+	position: absolute;
+	border: 3px solid pink;
+	z-index: 4;
+	left: 80%;
+	top: 20%;
+	cursor: move;
+}
 
-	body {
-		background-image: url("images/cyber.jpg");
-	}
-	
+#snorkle-square {
+	position: absolute;
+	border: 3px solid pink;
+	z-index: 5;
+	width: 85px;
+	height: 85px;
+	left: 93%;
+	top: 90%;
+	cursor: move;
+}
+
+
+/* lastfm display */
+#lastfm {
+	position: absolute;
+	border: solid pink;
+	border-width: 3px 3px 3px 3px;
+	z-index: 9;
+	background-color: #2f1744;
+	left: 2%;
+	top: 12%;
+	cursor: move;
+}
+
+#album-cover {
+	align: center;
+	width: 140px;
+	height: 140px;
+}
+
+#track {
+	font-family: monospace;
+	font-size: 16px;
+	color: pink;
+}
+
+#artist {
+	font-family: monospace;
+	font-size: 14px;
+	color: pink;
+}
+
+#date {
+	font-family: monospace;
+	font-size: 12px;
+	color: pink;
+}
+
+#date a {
+	color: white;
+}
+
+/* mobile reworking */
+@media (max-width: 800px) {
+
 	h1 {
+		font-size: 20px;
 		text-align: center;
 		color: pink;
-		margin: 30px 0px 30px 0px; /* top right bottom left*/
+		margin: 30px 0px 30px 0px;
 	}
-	
-	#leftfloat {
-		float: left;
-		padding: 0px 10px 0px 0px;
-	}
-	
-	#rightfloat {
-		float:right;
-		padding: 0px 0px 0px 10px;
-	}
-	
+
 	p {
 		font-family: monospace;
-		font-size: 14px;
+		font-size: 13px;
 		text-align: right;
 		color: pink;
 		padding: 10px;
 		margin: 5px;
 	}
-	
-	td {
-		vertical-align: middle;
-	}
-	
-	iframe {
-		border: 3px solid pink;
-	}
-	
-	/* main text on homepage */
+
+	/* primary elements */
 	#maintext {
 		position: absolute;
 		left: 2%;
-		top: 56%;
-		width: 20%;
+		top: 10%;
+		width: 95%;
 		border-style: solid;
+		border-width: 1px 1px 1px 1px;
 		border-color: pink;
 		background-color: #2f1744;
 		z-index: 9;
-		cursor: move;
 	}
 	
 	#divinelight {
@@ -151,16 +190,37 @@ iframe {
 		width: 34%;
 		padding: 8px;
 	}
-	
-	
-	/* links n stuff */
+
+	#mobilebox {
+		display: initial;
+		position: absolute;
+		top: 30%;
+		left: 1%;
+		width: 96%;
+		height: 37%;
+		border-style: solid;
+		border-width: 1px 1px 1px 1px;
+		border-color: pink;
+		background-color: #2f1744;
+	}
+
+	#rectangle {
+		display: none;
+	}
+
 	#linkbox {
 		position: absolute;
-		top: 270px;
-		left: 67px;
+		top: 70%;
+		left: 1%;
 		margin: auto;
-		z-index: 4;
-		cursor: move;
+		z-index: 6;
+		background-image: url("images/double_pendulum.gif");
+		background-repeat: no-repeat;
+		border-style: solid;
+		border-color: pink;
+		border-width: 1px 1px 1px 1px;
+		height: 190px;
+		width: 215px;
 	}
 	
 	#linkbox p {
@@ -168,58 +228,31 @@ iframe {
 		text-align: justify;
 	}
 	
-	ul {
+	#linkbox ul {
 		list-style-type: none;
-		background-image: url("images/double_pendulum.gif");
-		background-repeat: no-repeat;
-		border-style: solid;
-		border-color: pink;
 		height: 190px;
 		width: 150px;
 	}
-	
-	li a {
-		text-align: left;
-		margin: 5px;
-	}
-	
+
 	/* secondary elements */
 	#koa-ad {
-		position: absolute;
-		border: 3px solid pink;
-		left: 80%;
-		top: 20%;
-		z-index: 5;
-		cursor: move;
+		display: none;
 	}
-	
+
 	#snorkle-square {
-		position: absolute;
-		bottom: 5px;
-		right: 5px;
-		border: 3px solid pink;
-		z-index: 1;
-		width: 85px;
-		height: 85px;
-		cursor: move;
+		display:none;
 	}
-	
-	#rectangle {
-		position: absolute;
-		z-index: 3;
-		width: 50%;
-		height: 75%;
-		left: 25%;
-		top:10%;
-	}
-	
+
+	/* lastfm display */
 	#lastfm {
 		position: absolute;
 		border: solid pink;
-		border-width: 3px 3px 3px 3px;
-		z-index: 7;
+		border-width: 1px 1px 1px 1px;
+		z-index: 9;
 		background-color: #2f1744;
-		cursor: move;
+		width: 42%;
+		left: 55%;
+		top: 70%;
 	}
 	
 	#album-cover {
@@ -251,4 +284,3 @@ iframe {
 	}
 	
 }
-
