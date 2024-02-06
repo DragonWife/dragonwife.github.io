@@ -1,4 +1,4 @@
-/* here we go here we go here we go here we go */
+/* this is such a mess */ 
 
 body {
 	background-image: url("images/cyber.jpg");
@@ -87,7 +87,7 @@ li a {
 	margin: 5px;
 }
 
-/* joke adspace */
+/* secondary elements */
 #koa-ad {
 	position: absolute;
 	border: 3px solid pink;
@@ -152,4 +152,66 @@ li a {
 
 #date a {
 	color: white;
+}
+
+
+/* mobile "support" */
+@media (max-width: 800px) {
+
+	#koa-ad {
+		position: absolute;
+		border: 3px solid pink;
+		z-index: 0;
+		left: 0%;
+		top: 0%;
+	}
+	
+	#snorkle-square {
+		position: absolute;
+		border: 3px solid pink;
+		z-index: 0;
+		width: 85px;
+		height: 85px;
+		left: 0%;
+		top: 0%;
+	}
+	
+	#rectangle {
+		position: absolute;
+		z-index: 99;
+		width: 100%;
+		height: 75%;
+		left: 0%;
+		top: 30%;
+	}
+	
+	#lastfm {
+		position: absolute;
+		border: solid pink;
+		border-width: 3px 3px 3px 3px;
+		z-index: 0;
+		background-color: #2f1744;
+		left: 0%;
+		top: 0%;
+	}
+
+	#maintext {
+		position: absolute;
+		width: 20%;
+		border-style: solid;
+		border-color: pink;
+		background-color: #2f1744;
+		z-index: 9;
+		left: 0%;
+		top: 0%;
+	}
+
+	#linkbox {
+		position: absolute;
+		margin: auto;
+		z-index: 4;
+		left: 0%;
+		top: 0%;
+	}
+
 }
