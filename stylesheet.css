@@ -1,5 +1,4 @@
 /* this is such a mess */ 
-/* test */
 
 body {
 	background-image: url("images/cyber.jpg");
@@ -38,181 +37,218 @@ iframe {
 	border: 3px solid pink;
 }
 
-/* main text on homepage */
-#maintext {
-	position: absolute;
-	left: 2%;
-	top: 56%;
-	width: 20%;
-	border-style: solid;
-	border-color: pink;
-	background-color: #2f1744;
-	z-index: 9;
-	cursor: move;
-}
-
-#divinelight {
-	float: left;
-	width: 34%;
-	padding: 8px;
-}
-
-
-/* links n stuff */
-#linkbox {
-	position: absolute;
-	top: 270px;
-	left: 67px;
-	margin: auto;
-	z-index: 4;
-	cursor: move;
-}
-
-#linkbox p {
-	color: purple;
-	text-align: justify;
-}
-
-ul {
-	list-style-type: none;
-	background-image: url("images/double_pendulum.gif");
-	background-repeat: no-repeat;
-	border-style: solid;
-	border-color: pink;
-	height: 190px;
-	width: 150px;
-}
-
-li a {
-	text-align: left;
-	margin: 5px;
-}
-
-/* secondary elements */
 #koa-ad {
 	position: absolute;
 	border: 3px solid pink;
-	left: 80%;
-	top: 20%;
-	z-index: 5;
-	cursor: move;
+	z-index: 0;
+	left: 0%;
+	top: 0%;
 }
 
 #snorkle-square {
 	position: absolute;
-	bottom: 5px;
-	right: 5px;
 	border: 3px solid pink;
-	z-index: 1;
+	z-index: 0;
 	width: 85px;
 	height: 85px;
-	cursor: move;
+	left: 0%;
+	top: 0%;
 }
 
 #rectangle {
 	position: absolute;
-	z-index: 3;
-	width: 50%;
+	z-index: 99;
+	width: 100%;
 	height: 75%;
-	left: 25%;
-	top:10%;
+	left: 0%;
+	top: 30%;
 }
 
 #lastfm {
 	position: absolute;
 	border: solid pink;
 	border-width: 3px 3px 3px 3px;
-	z-index: 7;
+	z-index: 0;
 	background-color: #2f1744;
-	cursor: move;
+	left: 0%;
+	top: 0%;
 }
 
-#album-cover {
-	align: center;
-	width: 140px;
-	height: 140px;
+#maintext {
+	position: absolute;
+	width: 20%;
+	border-style: solid;
+	border-color: pink;
+	background-color: #2f1744;
+	z-index: 9;
+	left: 0%;
+	top: 0%;
 }
 
-#track {
-	font-family: monospace;
-	font-size: 16px;
-	color: pink;
-}
-
-#artist {
-	font-family: monospace;
-	font-size: 14px;
-	color: pink;
-}
-
-#date {
-	font-family: monospace;
-	font-size: 12px;
-	color: pink;
-}
-
-#date a {
-	color: white;
+#linkbox {
+	position: absolute;
+	margin: auto;
+	z-index: 4;
+	left: 0%;
+	top: 0%;
 }
 
 
-/* mobile "support" */
-@media only screen and (max-width: 800px) {
+@media (min-width: 800px) {
 
+	body {
+		background-image: url("images/cyber.jpg");
+	}
+	
+	h1 {
+		text-align: center;
+		color: pink;
+		margin: 30px 0px 30px 0px; /* top right bottom left*/
+	}
+	
+	#leftfloat {
+		float: left;
+		padding: 0px 10px 0px 0px;
+	}
+	
+	#rightfloat {
+		float:right;
+		padding: 0px 0px 0px 10px;
+	}
+	
+	p {
+		font-family: monospace;
+		font-size: 14px;
+		text-align: right;
+		color: pink;
+		padding: 10px;
+		margin: 5px;
+	}
+	
+	td {
+		vertical-align: middle;
+	}
+	
+	iframe {
+		border: 3px solid pink;
+	}
+	
+	/* main text on homepage */
+	#maintext {
+		position: absolute;
+		left: 2%;
+		top: 56%;
+		width: 20%;
+		border-style: solid;
+		border-color: pink;
+		background-color: #2f1744;
+		z-index: 9;
+		cursor: move;
+	}
+	
+	#divinelight {
+		float: left;
+		width: 34%;
+		padding: 8px;
+	}
+	
+	
+	/* links n stuff */
+	#linkbox {
+		position: absolute;
+		top: 270px;
+		left: 67px;
+		margin: auto;
+		z-index: 4;
+		cursor: move;
+	}
+	
+	#linkbox p {
+		color: purple;
+		text-align: justify;
+	}
+	
+	ul {
+		list-style-type: none;
+		background-image: url("images/double_pendulum.gif");
+		background-repeat: no-repeat;
+		border-style: solid;
+		border-color: pink;
+		height: 190px;
+		width: 150px;
+	}
+	
+	li a {
+		text-align: left;
+		margin: 5px;
+	}
+	
+	/* secondary elements */
 	#koa-ad {
 		position: absolute;
 		border: 3px solid pink;
-		z-index: 0;
-		left: 0%;
-		top: 0%;
+		left: 80%;
+		top: 20%;
+		z-index: 5;
+		cursor: move;
 	}
 	
 	#snorkle-square {
 		position: absolute;
+		bottom: 5px;
+		right: 5px;
 		border: 3px solid pink;
-		z-index: 0;
+		z-index: 1;
 		width: 85px;
 		height: 85px;
-		left: 0%;
-		top: 0%;
+		cursor: move;
 	}
 	
 	#rectangle {
 		position: absolute;
-		z-index: 99;
-		width: 100%;
+		z-index: 3;
+		width: 50%;
 		height: 75%;
-		left: 0%;
-		top: 30%;
+		left: 25%;
+		top:10%;
 	}
 	
 	#lastfm {
 		position: absolute;
 		border: solid pink;
 		border-width: 3px 3px 3px 3px;
-		z-index: 0;
+		z-index: 7;
 		background-color: #2f1744;
-		left: 0%;
-		top: 0%;
+		cursor: move;
 	}
-
-	#maintext {
-		position: absolute;
-		width: 20%;
-		border-style: solid;
-		border-color: pink;
-		background-color: #2f1744;
-		z-index: 9;
-		left: 0%;
-		top: 0%;
+	
+	#album-cover {
+		align: center;
+		width: 140px;
+		height: 140px;
 	}
-
-	#linkbox {
-		position: absolute;
-		margin: auto;
-		z-index: 4;
-		left: 0%;
-		top: 0%;
+	
+	#track {
+		font-family: monospace;
+		font-size: 16px;
+		color: pink;
 	}
-
+	
+	#artist {
+		font-family: monospace;
+		font-size: 14px;
+		color: pink;
+	}
+	
+	#date {
+		font-family: monospace;
+		font-size: 12px;
+		color: pink;
+	}
+	
+	#date a {
+		color: white;
+	}
+	
 }
+
